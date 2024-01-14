@@ -1,0 +1,21 @@
+<% if (succMsg && succMsg.length) { %>
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+
+        <%= succMsg %> !
+        <button class="btn-close" type="button" data-bs-dismiss="alert" aria-label="Close">
+
+        </button>
+    </div>
+    <% } %>
+
+
+    <% if (errMsg && errMsg.length) { %>
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+    
+            <%= errMsg %> !
+            <button class="btn-close" type="button" data-bs-dismiss="alert" aria-label="Close">
+    
+            </button>
+        </div>
+        <% } %>
+    
